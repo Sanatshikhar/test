@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Header';
+import NewArrivals from './NewArrivals';
+import SummerFlashSale from './SummerFlashSale';
+import Testimonials from './Testimonials';
+import Carousel from './Carousel';
+import EditorsPick from './EditorsPick';
+import SatisfactionGuaranteed from './SatisfactionGuaranteed';
+import Shipping from './Shipping';
+import Services from './Services';
+import './index';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <NewArrivals />
+      <SummerFlashSale />
+      <Testimonials />
+      <Carousel />
+      <EditorsPick />
+      <SatisfactionGuaranteed />
+      <Shipping />
+      <Services />
+      <index />
     </div>
   );
-}
+};
 
 export default App;
